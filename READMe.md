@@ -64,8 +64,20 @@ Example app listening at http://localhost:3000
 You need to get your current transactions.
 Open another command line in any folder and type the following:  
 
-```bash
+```curl
 curl localhost:3000
+```
+
+You should see a list of the transactions that the application starts with:  
+
+```curl
+[
+  {
+    "id": 1,
+    "amount": 25,
+    "to": "joe"
+  }
+]
 ```
 
 ## Adding Transactions
@@ -73,12 +85,18 @@ curl localhost:3000
 You may also need to add transactions to your list of transactions.  
 On the command line, type the following and replace the values with a value of your choice to add to your list of transactions:
 
-```bash
+```curl
 curl --location --request POST 'localhost:3000' --header 'Content-Type: application/json' --data-raw '{
     "id": {yourID},
     "amount": {yourAmount},
     "to": "{someName}"
 }'
+```
+
+You should get the following response:  
+
+```curl
+successfully added transaction #: {yourID}, in the amount of {yourAmount} to: {someName}
 ```
 
 **Note:** You can only use numbers and decimals for the `id` and the `amount`.  
@@ -90,12 +108,18 @@ You can now get your transactions to see your new transaction added to the list 
 You may also need to remove a transaction from your transactions when you have finished processing it.
 On the command line that you have opened, type the following to delete the transaction:
 
-```bash
+```curl
 curl --location --request DELETE 'localhost:3000' --header 'Content-Type: application/json' --data-raw '{
     "id": {yourIDToDelete},
     "amount": {yourAmountToDelete},
     "to": "{yourNameToDelete}"
 }'
+```
+
+You should see the following response:  
+
+```curl
+
 ```
 
 ## Next Steps
