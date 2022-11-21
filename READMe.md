@@ -7,8 +7,8 @@ You can use APIs to do the following:
 * Delete data when you no longer need it.  
 
 With an API, multiple systems can interact with the same information to keep a centralized record of your data.
-You systems can be interoperable and exist in many different code bases when you use APIs.
-You can make changes on the front-end that don't require changes on the backend, and you can make change to the backend and the API that don't require changes on the front-end.  
+Your systems can be interoperable and exist in many different code bases when you use APIs.
+You can make changes on the front-end that don't require changes on the backend, and you can make changes to the backend and the API that don't require changes on the front-end.  
 
 You should learn how to do the following in this document:  
 
@@ -23,7 +23,7 @@ You should learn how to do the following in this document:
 You should do the following to complete this tutorial:  
 
 * Download [Node.js](https://nodejs.org/en/download/).  
-    **Note:** Download the latest long term support or LTS version for the most stability.  
+    **Note:** Download the latest long time support or LTS version for the most stability.  
 * Download [Git](https://git-scm.com/downloads) or the command line tool of your choice.
 * Download [curl](https://curl.se/download.html) for your system.
 
@@ -62,7 +62,7 @@ Example app listening at http://localhost:3000
 ## Getting Your Transactions
 
 You need to get your current transactions.
-Open a another command line in any folder and type the following:  
+Open another command line in any folder and type the following:  
 
 ```bash
 curl localhost:3000
@@ -108,6 +108,6 @@ You should have learned how to do the following from this document:
 * Add a transaction to the transactions array.
 * Delete a transaction from the transactions array.
 
-You can now use the example code to work with your API locally, or deploy the code to a server to create a public API.
+You can now use the example code to work with your API locally or deploy the code to a server to create a public API.
 You may want to secure your API with some authorization before making it public.
 You can now have multiple systems use one API as the single source of truth to give your interoperability and to make your information easier to maintain.  
