@@ -119,7 +119,13 @@ curl --location --request DELETE 'localhost:3000' --header 'Content-Type: applic
 You should see the following response:  
 
 ```curl
+sucessfully deleted transaction #: {yourIDToDelete}
+```
 
+**Note:** If the transaction does not exist, you receive the following response:  
+
+```curl
+no transaction with that id exists
 ```
 
 ## Next Steps
@@ -134,4 +140,4 @@ You should have learned how to do the following from this document:
 
 You can now use the example code to work with your API locally or deploy the code to a server to create a public API.
 You may want to secure your API with some authorization before making it public.
-You can now have multiple systems use one API as the single source of truth to give your interoperability and to make your information easier to maintain.  
+You can now have multiple systems use one API as the single source of truth to give you interoperability across systems and to make your transactions easier to maintain.  
